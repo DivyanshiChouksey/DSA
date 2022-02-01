@@ -1,8 +1,19 @@
-# two num sum
-# O(n^2) Time complexity
+# Two Sum
 nums = [2,7,11,15]
 target = 9
-for i in range(0,len(nums)):
+
+# Naive Solution
+# O(n^2) Time complexity
+for i in range(0, len(nums)):
     for j in range(i+1,len(nums)):
-        if nums[i] + nums[j] == target:
-            print(i,j)
+        if nums[i]+nums[j] == target:
+            print ([i,j])
+
+# Best Solution
+# O(n) Time complexity | O(n) Space complexity
+dct = {}
+for i,num in enumerate(nums):
+    if num in dct:
+        print ([dct[num],i])
+    else:
+        dct[target-num]=i
