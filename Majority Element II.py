@@ -1,4 +1,4 @@
-# Majority Element 2
+# Majority Element II
 nums = [1,1,1,2,2,3,3,3]
 
 # Naive Solution 
