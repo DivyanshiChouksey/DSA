@@ -1,7 +1,8 @@
 # Can Place Flowers
-
+flowerbed = [1,0,0,0,1]
+n = 1
 if n==0:
-    return True
+    print (True)
 st=[0]+flowerbed+[0]
 i = 1
 while i<len(st)-1:
@@ -9,6 +10,6 @@ while i<len(st)-1:
         n-=1
         i+=1
         if n==0:
-            return True
+            print(True)
     i+=1
-return (n==0)
+print(n==0)
